@@ -1,37 +1,21 @@
 {
+  "manifest_version": "2.0",
   "name": "Node LTS SDK",
-  "description": "Build simple, secure, scalable systems with Node.js",
-  "version": "v22.16.0",
+  "description": "Node.js tools for Cpak development environments.",
+  "version": "24.19.0",
   "image": "ghcr.io/containerpak/sdk-node-lts:main",
   "binaries": [
     "/usr/local/bin/node",
-    "/usr/local/bin/npm"
+    "/usr/local/bin/npm",
+    "/usr/local/bin/npx",
+    "/usr/local/bin/corepack"
   ],
   "desktop_entries": [],
   "dependencies": [],
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
-    "socketWayland": true,
-    "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": true,
-    "socketSshAgent": true,
-    "socketCups": true,
-    "socketGpgAgent": true,
-    "deviceDri": false,
-    "deviceKvm": false,
-    "deviceShm": false,
-    "deviceAll": true,
-    "fsHost": true,
-    "fsHostEtc": false,
     "fsHostHome": true,
-    "fsExtra": [],
-    "env": [],
-    "network": true,
-    "process": true,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "network": true
   }
 }

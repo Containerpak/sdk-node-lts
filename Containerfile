@@ -1,4 +1,4 @@
-FROM ghcr.io/containerpak/base:main AS fetch
+FROM ubuntu:26.04 AS fetch
 
 ARG TARGETARCH
 ARG NODE_VERSION=24.19.0
@@ -20,7 +20,7 @@ RUN apt-get update && \
     tar -xJf "/tmp/${archive}" -C /opt/node --strip-components=1 && \
     rm "/tmp/${archive}"
 
-FROM ghcr.io/containerpak/base:main
+FROM ubuntu:26.04
 
 COPY --from=fetch /opt/node/ /usr/local/
 

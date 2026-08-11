@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
   "manifest_version": "2.0",
   "name": "Node LTS SDK",
   "description": "Node.js tools for Cpak development environments.",
@@ -15,7 +16,12 @@
   "addons": [],
   "idle_time": 0,
   "override": {
-    "fsHostHome": true,
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "network": true
   }
 }

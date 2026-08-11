@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
   "manifest_version": "2.0",
   "name": "Node LTS SDK",
-  "description": "Node.js tools for Cpak development environments.",
+  "description": "Node.js tools for cpak development environments.",
   "version": "24.19.0",
   "image": "ghcr.io/containerpak/sdk-node-lts:main",
   "binaries": [

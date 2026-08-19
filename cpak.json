@@ -16,12 +16,44 @@
   "addons": [],
   "idle_time": 0,
   "override": {
+    "socketX11": false,
+    "socketWayland": false,
+    "socketPulseAudio": false,
+    "socketSessionBus": false,
+    "socketSystemBus": false,
+    "socketSshAgent": false,
+    "socketCups": false,
+    "socketGpgAgent": false,
+    "socketAtSpiBus": false,
+    "socketBluetooth": false,
+    "deviceDri": false,
+    "deviceKvm": false,
+    "deviceShm": false,
+    "deviceAlsa": false,
+    "deviceVideo": false,
+    "deviceFuse": false,
+    "deviceTun": false,
+    "deviceUsb": false,
+    "deviceSerial": false,
+    "deviceInput": false,
+    "deviceTTY": false,
+    "deviceAll": false,
+    "notification": false,
+    "openURI": false,
+    "hostApplications": false,
+    "filePicker": {},
+    "network": true,
+    "process": false,
+    "userNamespaces": false,
+    "memoryMaxMB": 0,
+    "cpuQuota": 0,
+    "pidsMax": 0,
+    "asRoot": false,
     "filesystem": [
       {
         "path": "home",
         "access": "read-write"
       }
-    ],
-    "network": true
+    ]
   }
 }

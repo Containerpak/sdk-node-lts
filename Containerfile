@@ -22,14 +22,7 @@ RUN apt-get update && \
     tar -xJf "/tmp/${archive}" -C /opt/node --strip-components=1 && \
     cpak-clean-junk
 
-FROM ubuntu:26.04
-
-COPY cpak-apt.conf /etc/apt/apt.conf.d/90cpak
-COPY --chmod=0755 cpak-clean-junk /usr/bin/cpak-clean-junk
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends ca-certificates && \
-    cpak-clean-junk
+FROM ghcr.io/containerpak/base:main
 
 COPY --from=fetch /opt/node/ /usr/local/
 

@@ -1,10 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Node LTS SDK",
   "description": "Node.js tools for cpak development environments.",
   "version": "24.20.0",
-  "image": "ghcr.io/containerpak/sdk-node-lts:main",
+  "image": "ghcr.io/containerpak/sdk-node-lts@sha256:12efc55363cea479e990ca62c90be3373b0a4388a5ad83ee7f8ad5f8ace6639a",
   "binaries": [
     "/usr/local/bin/node",
     "/usr/local/bin/npm",
@@ -19,21 +19,18 @@
     "slot": "sdk.node",
     "mode": "exclusive",
     "exports": {
-      "path": ["/usr/local/bin"]
+      "path": [
+        "/usr/local/bin"
+      ]
     }
   },
   "idle_time": 0,
   "override": {
-    "socketX11": false,
     "socketWayland": false,
     "socketPulseAudio": false,
-    "socketSessionBus": false,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": false,
-    "socketBluetooth": false,
     "deviceDri": false,
     "deviceKvm": false,
     "deviceShm": false,

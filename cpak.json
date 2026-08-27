@@ -4,7 +4,7 @@
   "name": "Node LTS SDK",
   "description": "Node.js tools for cpak development environments.",
   "version": "24.20.0",
-  "image": "ghcr.io/containerpak/sdk-node-lts@sha256:9e07f1fb6047e0ff2d884a869f594221c4910f15ed8ce444fd04811a292be660",
+  "image": "ghcr.io/containerpak/sdk-node-lts@sha256:4c737720df933944ac2dfcd81b8eff6ab44569c6d97625dc4e828f1f6516c6ae",
   "binaries": [
     "/usr/local/bin/node",
     "/usr/local/bin/npm",

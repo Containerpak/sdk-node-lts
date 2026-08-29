@@ -26,11 +26,13 @@
   },
   "idle_time": 0,
   "override": {
+    "displayX11": false,
     "socketWayland": false,
     "socketPulseAudio": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
+    "bluetooth": false,
     "deviceDri": false,
     "deviceKvm": false,
     "deviceShm": false,
@@ -47,6 +49,12 @@
     "openURI": false,
     "hostApplications": false,
     "filePicker": {},
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "network": true,
     "hostNetwork": true,
     "process": false,
@@ -54,12 +62,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "filesystem": [
-      {
-        "path": "home",
-        "access": "read-write"
-      }
-    ]
+    "asRoot": false
   }
 }
